@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LinkedIn Post Scraper</title>
+    <style>
+        #mySidebar {
+            display: none;
+            position: fixed;
+            width: 300px;
+            height: 100%;
+            top: 0;
+            right: 0;
+            background: #111;
+            color: #fff;
+            overflow: auto;
+            z-index: 9999;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="openSidebar()">Scrape Posts</button>
+    <div id="mySidebar">
+        <button onclick="closeSidebar()">Close</button>
+        <div id="postContainer"></div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
